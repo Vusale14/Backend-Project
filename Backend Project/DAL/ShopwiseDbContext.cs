@@ -1,9 +1,11 @@
 ﻿using Backend_Project.Entities;
+using Microsoft.AspNetCore.Identity;
+using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
 
 namespace Backend_Project.DAL
 {
-    public class ShopwiseDbContext : DbContext
+    public class ShopwiseDbContext : IdentityDbContext<CustomUser>
     {
         public ShopwiseDbContext(DbContextOptions<ShopwiseDbContext> options) : base(options)
         {
@@ -23,6 +25,7 @@ namespace Backend_Project.DAL
         public DbSet<ProductInformation> ProductInformations { get; set; }
         public DbSet<AdditionalInfo> AdditionalInfos { get; set; }
         public DbSet<ProductAdditionalInfo> ProductAdditionalInfos { get; set; }
-        public DbSet<ShopList> ShopLists { get; set; }
+        public DbSet<CustomUser> CustomUsers { get; set; }
+        public DbSet<Review> Reviews { get; set; }
     }
 }

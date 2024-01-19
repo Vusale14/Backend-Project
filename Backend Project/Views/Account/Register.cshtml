@@ -1,0 +1,177 @@
+﻿@model RegisterVM
+@{
+    ViewData["Title"] = "Register page";
+}
+<!-- LOADER -->
+<div class="preloader">
+    <div class="lds-ellipsis">
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+</div>
+<!-- END LOADER -->
+<!-- Home Popup Section -->
+<div class="modal fade subscribe_popup" id="onload-popup" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="modal-body">
+                <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true"><i class="ion-ios-close-empty"></i></span>
+                </button>
+                <div class="row g-0">
+                    <div class="col-sm-5">
+                        <div class="background_bg h-100" data-img-src="~/assets/images/popup_img.jpg"></div>
+                    </div>
+                    <div class="col-sm-7">
+                        <div class="popup_content">
+                            <div class="popup-text">
+                                <div class="heading_s4">
+                                    <h4>Subscribe and Get 25% Discount!</h4>
+                                </div>
+                                <p>Subscribe to the newsletter to receive updates about new products.</p>
+                            </div>
+                            <form method="post">
+                                <div class="form-group mb-3">
+                                    <input name="email" required type="email" class="form-control rounded-0" placeholder="Enter Your Email">
+                                </div>
+                                <div class="form-group mb-3">
+                                    <button class="btn btn-fill-line btn-block text-uppercase rounded-0" title="Subscribe" type="submit">Subscribe</button>
+                                </div>
+                            </form>
+                            <div class="chek-form">
+                                <div class="custome-checkbox">
+                                    <input class="form-check-input" type="checkbox" name="checkbox" id="exampleCheckbox3" value="">
+                                    <label class="form-check-label" for="exampleCheckbox3"><span>Don't show this popup again!</span></label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- End Screen Load Popup Section -->
+<div class="breadcrumb_section bg_gray page-title-mini">
+    <div class="container">
+        <!-- STRART CONTAINER -->
+        <div class="row align-items-center">
+            <div class="col-md-6">
+                <div class="page-title">
+                    <h1>Register</h1>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <ol class="breadcrumb justify-content-md-end">
+                    <li class="breadcrumb-item"><a href="#">Home</a></li>
+                    <li class="breadcrumb-item"><a href="#">Pages</a></li>
+                    <li class="breadcrumb-item active">Register</li>
+                </ol>
+            </div>
+        </div>
+    </div><!-- END CONTAINER-->
+</div>
+<!-- END SECTION BREADCRUMB -->
+<!-- START MAIN CONTENT -->
+<div class="main_content">
+
+    <!-- START LOGIN SECTION -->
+    <div class="login_register_wrap section">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-xl-6 col-md-10">
+                    <div class="login_wrap">
+                        <div class="padding_eight_all bg-white">
+                            <div class="heading_s1">
+                                <h3>Create an Account</h3>
+                            </div>
+                            <form method="post">
+                                
+                                <div class="form-group mb-3">
+                                    <label asp-for="@Model.Firstname"></label>
+                                    <input asp-for="Firstname" class="form-control" placeholder="Enter Your Firstname" />
+                                    <span asp-validation-for="Firstname" class="text-danger"></span>
+                                </div>
+                                <div class="form-group mb-3">
+                                    <label asp-for="@Model.Lastname"></label>
+                                    <input asp-for="Lastname" class="form-control" placeholder="Enter Your Lastname" />
+                                    <span asp-validation-for="Lastname" class="text-danger"></span>
+                                </div>
+                                <div class="form-group mb-3">
+                                    <label asp-for="@Model.Username"></label>
+                                    <input asp-for="Username" class="form-control" placeholder="Enter Your Username" />
+                                    <span asp-validation-for="Username" class="text-danger"></span>
+                                </div>
+                                <div class="form-group mb-3">
+                                    <label asp-for="@Model.Email"></label>
+                                    <input asp-for="Email" class="form-control" placeholder="Enter Your Email"/>
+                                    <span asp-validation-for="Email" class="text-danger"></span>
+                                </div>
+                                <div class="form-group mb-3">
+                                    <label asp-for="@Model.Password"></label>
+                                    <input asp-for="Password" class="form-control" placeholder="Enter Your Password"/>
+                                    <span asp-validation-for="Password" class="text-danger"></span>
+                                </div>
+                                <div class="form-group mb-3">
+                                    <label asp-for="@Model.ConfirmPassword"></label>
+                                    <input asp-for="ConfirmPassword" class="form-control" placeholder="Enter Your ConfirmPassword"/>
+                                    <span asp-validation-for="ConfirmPassword" class="text-danger"></span>
+                                </div>
+                                <div class="login_footer form-group mb-3">
+                                    <div class="chek-form">
+                                        <div class="custome-checkbox">
+                                            <input asp-for="IsTermsAccepted"/>
+                                            <label asp-for="IsTermsAccepted"><span>I agree to terms &amp; Policy.</span></label>
+                                            <span asp-validation-for="IsTermsAccepted" class="text-danger"></span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-group mb-3">
+                                    <button type="submit" class="btn btn-fill-out btn-block" name="register">Register</button>
+                                </div>
+                            </form>
+                            <div class="different_login">
+                                <span> or</span>
+                            </div>
+                            <ul class="btn-login list_none text-center">
+                                <li><a href="#" class="btn btn-facebook"><i class="ion-social-facebook"></i>Facebook</a></li>
+                                <li><a href="#" class="btn btn-google"><i class="ion-social-googleplus"></i>Google</a></li>
+                            </ul>
+                            <div class="form-note text-center">Already have an account? <a href="login.html">Log in</a></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- END LOGIN SECTION -->
+    <!-- START SECTION SUBSCRIBE NEWSLETTER -->
+    <div class="section bg_default small_pt small_pb">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <div class="heading_s1 mb-md-0 heading_light">
+                        <h3>Subscribe Our Newsletter</h3>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="newsletter_form">
+                        <form>
+                            <input type="text" required="" class="form-control rounded-0" placeholder="Enter Email Address">
+                            <button type="submit" class="btn btn-dark rounded-0" name="submit" value="Submit">Subscribe</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- START SECTION SUBSCRIBE NEWSLETTER -->
+
+</div>
+<!-- END MAIN CONTENT -->
+@section Scripts{
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.20.0/jquery.validate.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validation-unobtrusive/4.0.0/jquery.validate.unobtrusive.min.js"></script>
+}

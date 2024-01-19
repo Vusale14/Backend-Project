@@ -2,6 +2,8 @@
 using Microsoft.AspNetCore.Mvc;
 using Backend_Project.Entities;
 using Microsoft.EntityFrameworkCore;
+using Newtonsoft.Json;
+using Backend_Project.ViewModels;
 
 namespace Backend_Project.Controllers
 {
@@ -23,7 +25,8 @@ namespace Backend_Project.Controllers
         {
             if (id == 0) return BadRequest();
             Product product = _context.Products
-                                                .Include(p=>p.Category)
+                                               .Include(p => p.Reviews)
+                                               .Include(p=>p.Category)
                                                .Include(p => p.ProductAdditionalInfos)
                                                .ThenInclude(p => p.AdditionalInfo)
                                                .Include(p => p.ProductInformations)

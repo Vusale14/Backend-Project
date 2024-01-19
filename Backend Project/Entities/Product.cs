@@ -12,6 +12,8 @@
         public string SKU { get; set; } = null!;
         public int CategoryId { get; set; }
         public Category Category { get; set; } = null!;
+
+        public List<Review> Reviews { get; set; }
         public ICollection<ProductInformation> ProductInformations { get; set; } = null!;
         public ICollection<ProductAdditionalInfo> ProductAdditionalInfos { get; set; } = null!;
 

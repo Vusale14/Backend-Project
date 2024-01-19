@@ -4,6 +4,7 @@ using Backend_Project.DAL;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 #nullable disable
@@ -11,9 +12,10 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace Backend_Project.Migrations
 {
     [DbContext(typeof(ShopwiseDbContext))]
-    partial class ShopwiseDbContextModelSnapshot : ModelSnapshot
+    [Migration("20240118153458_CreateTableCustomUser")]
+    partial class CreateTableCustomUser
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -354,45 +356,6 @@ namespace Backend_Project.Migrations
                     b.ToTable("ProductInformations");
                 });
 
-            modelBuilder.Entity("Backend_Project.Entities.Review", b =>
-                {
-                    b.Property<int>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("int");
-
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"), 1L, 1);
-
-                    b.Property<string>("CommentDate")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<int>("CustomUserId")
-                        .HasColumnType("int");
-
-                    b.Property<string>("CustomUserId1")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(450)");
-
-                    b.Property<int>("ProductId")
-                        .HasColumnType("int");
-
-                    b.Property<string>("UserComment")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("UserName")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
-                    b.HasKey("Id");
-
-                    b.HasIndex("CustomUserId1");
-
-                    b.HasIndex("ProductId");
-
-                    b.ToTable("Reviews");
-                });
-
             modelBuilder.Entity("Backend_Project.Entities.ShopList", b =>
                 {
                     b.Property<int>("Id")
@@ -691,25 +654,6 @@ namespace Backend_Project.Migrations
                     b.Navigation("Product");
                 });
 
-            modelBuilder.Entity("Backend_Project.Entities.Review", b =>
-                {
-                    b.HasOne("Backend_Project.Entities.CustomUser", "CustomUser")
-                        .WithMany()
-                        .HasForeignKey("CustomUserId1")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.HasOne("Backend_Project.Entities.Product", "Product")
-                        .WithMany("Reviews")
-                        .HasForeignKey("ProductId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.Navigation("CustomUser");
-
-                    b.Navigation("Product");
-                });
-
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityRoleClaim<string>", b =>
                 {
                     b.HasOne("Microsoft.AspNetCore.Identity.IdentityRole", null)
@@ -766,8 +710,6 @@ namespace Backend_Project.Migrations
                     b.Navigation("ProductAdditionalInfos");
 
                     b.Navigation("ProductInformations");
-
-                    b.Navigation("Reviews");
                 });
 #pragma warning restore 612, 618
         }
