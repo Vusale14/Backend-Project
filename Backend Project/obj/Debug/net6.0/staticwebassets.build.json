@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "r075qjXk6DXUY6mV0JrLCZ9asUofCuSqW4puI6lhqiI=",
+  "Hash": "LwmTPnXweLBYsAtkEyFAtZGg9nABUHgi87yHWnkTGc8=",
   "Source": "Backend Project",
   "BasePath": "_content/Backend Project",
   "Mode": "Default",
@@ -2533,6 +2533,23 @@
       "OriginalItemSpec": "wwwroot\\assets\\images\\amarican_express.png"
     },
     {
+      "Identity": "C:\\Users\\Vusala\\Desktop\\1.layihe\\Backend Project\\Backend Project\\wwwroot\\assets\\images\\audio.jpg",
+      "SourceId": "Backend Project",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Vusala\\Desktop\\1.layihe\\Backend Project\\Backend Project\\wwwroot\\",
+      "BasePath": "_content/Backend Project",
+      "RelativePath": "assets/images/audio.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\assets\\images\\audio.jpg"
+    },
+    {
       "Identity": "C:\\Users\\Vusala\\Desktop\\1.layihe\\Backend Project\\Backend Project\\wwwroot\\assets\\images\\banner1.jpg",
       "SourceId": "Backend Project",
       "SourceType": "Discovered",
@@ -3177,6 +3194,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\assets\\images\\blog_small_img8.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\Vusala\\Desktop\\1.layihe\\Backend Project\\Backend Project\\wwwroot\\assets\\images\\camera.jpg",
+      "SourceId": "Backend Project",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Vusala\\Desktop\\1.layihe\\Backend Project\\Backend Project\\wwwroot\\",
+      "BasePath": "_content/Backend Project",
+      "RelativePath": "assets/images/camera.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\assets\\images\\camera.jpg"
     },
     {
       "Identity": "C:\\Users\\Vusala\\Desktop\\1.layihe\\Backend Project\\Backend Project\\wwwroot\\assets\\images\\cart_thamb1.jpg",
@@ -4505,6 +4539,23 @@
       "OriginalItemSpec": "wwwroot\\assets\\images\\furniture_insta6.jpg"
     },
     {
+      "Identity": "C:\\Users\\Vusala\\Desktop\\1.layihe\\Backend Project\\Backend Project\\wwwroot\\assets\\images\\headphone.jpg",
+      "SourceId": "Backend Project",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Vusala\\Desktop\\1.layihe\\Backend Project\\Backend Project\\wwwroot\\",
+      "BasePath": "_content/Backend Project",
+      "RelativePath": "assets/images/headphone.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\assets\\images\\headphone.jpg"
+    },
+    {
       "Identity": "C:\\Users\\Vusala\\Desktop\\1.layihe\\Backend Project\\Backend Project\\wwwroot\\assets\\images\\insta_img1.jpg",
       "SourceId": "Backend Project",
       "SourceType": "Discovered",
@@ -4979,6 +5030,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\assets\\images\\menu_banner9.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\Vusala\\Desktop\\1.layihe\\Backend Project\\Backend Project\\wwwroot\\assets\\images\\mobilephone.jpg",
+      "SourceId": "Backend Project",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Vusala\\Desktop\\1.layihe\\Backend Project\\Backend Project\\wwwroot\\",
+      "BasePath": "_content/Backend Project",
+      "RelativePath": "assets/images/mobilephone.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\assets\\images\\mobilephone.jpg"
     },
     {
       "Identity": "C:\\Users\\Vusala\\Desktop\\1.layihe\\Backend Project\\Backend Project\\wwwroot\\assets\\images\\paypal.png",
@@ -5950,6 +6018,23 @@
       "OriginalItemSpec": "wwwroot\\assets\\images\\team_img4.jpg"
     },
     {
+      "Identity": "C:\\Users\\Vusala\\Desktop\\1.layihe\\Backend Project\\Backend Project\\wwwroot\\assets\\images\\television.jpg",
+      "SourceId": "Backend Project",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Vusala\\Desktop\\1.layihe\\Backend Project\\Backend Project\\wwwroot\\",
+      "BasePath": "_content/Backend Project",
+      "RelativePath": "assets/images/television.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\assets\\images\\television.jpg"
+    },
+    {
       "Identity": "C:\\Users\\Vusala\\Desktop\\1.layihe\\Backend Project\\Backend Project\\wwwroot\\assets\\images\\tranding_img.png",
       "SourceId": "Backend Project",
       "SourceType": "Discovered",
@@ -6237,6 +6322,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\assets\\images\\visa.png"
+    },
+    {
+      "Identity": "C:\\Users\\Vusala\\Desktop\\1.layihe\\Backend Project\\Backend Project\\wwwroot\\assets\\images\\watch.jpg",
+      "SourceId": "Backend Project",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Vusala\\Desktop\\1.layihe\\Backend Project\\Backend Project\\wwwroot\\",
+      "BasePath": "_content/Backend Project",
+      "RelativePath": "assets/images/watch.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\assets\\images\\watch.jpg"
     },
     {
       "Identity": "C:\\Users\\Vusala\\Desktop\\1.layihe\\Backend Project\\Backend Project\\wwwroot\\assets\\js\\imagesloaded.pkgd.min.js",

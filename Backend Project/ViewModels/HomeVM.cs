@@ -12,7 +12,6 @@ namespace Backend_Project.ViewModels
         public ICollection<Featured> Featureds { get; set; } = null!;
         public ICollection<SpecialOffer> SpecialOffers { get; set; } = null!;
         public ICollection<Trending> Trendings { get; set; } = null!;
-        public ICollection<ProductVM> Products { get; set; } = null!;
 
     }
 }

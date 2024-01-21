@@ -35,5 +35,53 @@ namespace Backend_Project.Controllers
             if (product is null) return NotFound();
             return View(product);
         }
+
+        public IActionResult AddWishlist(int id)
+        {
+            if (id == 0) return NotFound();
+            Product product = _context.Products.FirstOrDefault(p => p.Id == id)!;
+            if (product is null) return NotFound();
+
+            //Get cookie
+            string wishlist = HttpContext.Request.Cookies["wishlist"]!;
+            CookieItem cookieProduct = new CookieItem
+            {
+                Id = product.Id,
+                Name = product.Name,
+                Price = product.NewPrice,
+                Quantity = 1
+            };
+            WishlistItem wishlistItem = new WishlistItem();
+            if (wishlist is null)
+            {
+                wishlistItem.CookieItems = new List<CookieItem>
+                {
+                    cookieProduct
+                };
+            }
+            else
+            {
+                wishlistItem = JsonConvert.DeserializeObject<WishlistItem>(wishlist)!;
+                CookieItem existedProduct = wishlistItem.CookieItems.FirstOrDefault(p => p.Id == id)!;
+
+                if (existedProduct is null)
+                {
+                    wishlistItem.CookieItems.Add(cookieProduct);
+                }
+            }
+
+            string productsStr = JsonConvert.SerializeObject(wishlistItem);
+            HttpContext.Response.Cookies.Append("wishlist", productsStr);
+
+            return RedirectToAction("Index", "Home");
+        }
+
+        public IActionResult ShowWishlist()
+        {
+            var wishlist = HttpContext.Request.Cookies["wishlist"] ?? "";
+            WishlistItem convertedProduct = JsonConvert.DeserializeObject<WishlistItem>(wishlist!)!;
+            return Json(convertedProduct);
+        }
+
     }
 }

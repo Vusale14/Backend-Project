@@ -593,6 +593,10 @@
       "PackagePath": "staticwebassets\\assets\\images\\amarican_express.png"
     },
     {
+      "Id": "C:\\Users\\Vusala\\Desktop\\1.layihe\\Backend Project\\Backend Project\\wwwroot\\assets\\images\\audio.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\audio.jpg"
+    },
+    {
       "Id": "C:\\Users\\Vusala\\Desktop\\1.layihe\\Backend Project\\Backend Project\\wwwroot\\assets\\images\\banner1.jpg",
       "PackagePath": "staticwebassets\\assets\\images\\banner1.jpg"
     },
@@ -743,6 +747,10 @@
     {
       "Id": "C:\\Users\\Vusala\\Desktop\\1.layihe\\Backend Project\\Backend Project\\wwwroot\\assets\\images\\blog_small_img8.jpg",
       "PackagePath": "staticwebassets\\assets\\images\\blog_small_img8.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Vusala\\Desktop\\1.layihe\\Backend Project\\Backend Project\\wwwroot\\assets\\images\\camera.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\camera.jpg"
     },
     {
       "Id": "C:\\Users\\Vusala\\Desktop\\1.layihe\\Backend Project\\Backend Project\\wwwroot\\assets\\images\\cart_thamb1.jpg",
@@ -1057,6 +1065,10 @@
       "PackagePath": "staticwebassets\\assets\\images\\furniture_insta_small8.jpg"
     },
     {
+      "Id": "C:\\Users\\Vusala\\Desktop\\1.layihe\\Backend Project\\Backend Project\\wwwroot\\assets\\images\\headphone.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\headphone.jpg"
+    },
+    {
       "Id": "C:\\Users\\Vusala\\Desktop\\1.layihe\\Backend Project\\Backend Project\\wwwroot\\assets\\images\\insta_img1.jpg",
       "PackagePath": "staticwebassets\\assets\\images\\insta_img1.jpg"
     },
@@ -1167,6 +1179,10 @@
     {
       "Id": "C:\\Users\\Vusala\\Desktop\\1.layihe\\Backend Project\\Backend Project\\wwwroot\\assets\\images\\menu_banner9.jpg",
       "PackagePath": "staticwebassets\\assets\\images\\menu_banner9.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Vusala\\Desktop\\1.layihe\\Backend Project\\Backend Project\\wwwroot\\assets\\images\\mobilephone.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\mobilephone.jpg"
     },
     {
       "Id": "C:\\Users\\Vusala\\Desktop\\1.layihe\\Backend Project\\Backend Project\\wwwroot\\assets\\images\\paypal.png",
@@ -1397,6 +1413,10 @@
       "PackagePath": "staticwebassets\\assets\\images\\team_img4.jpg"
     },
     {
+      "Id": "C:\\Users\\Vusala\\Desktop\\1.layihe\\Backend Project\\Backend Project\\wwwroot\\assets\\images\\television.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\television.jpg"
+    },
+    {
       "Id": "C:\\Users\\Vusala\\Desktop\\1.layihe\\Backend Project\\Backend Project\\wwwroot\\assets\\images\\tranding_img.png",
       "PackagePath": "staticwebassets\\assets\\images\\tranding_img.png"
     },
@@ -1463,6 +1483,10 @@
     {
       "Id": "C:\\Users\\Vusala\\Desktop\\1.layihe\\Backend Project\\Backend Project\\wwwroot\\assets\\images\\visa.png",
       "PackagePath": "staticwebassets\\assets\\images\\visa.png"
+    },
+    {
+      "Id": "C:\\Users\\Vusala\\Desktop\\1.layihe\\Backend Project\\Backend Project\\wwwroot\\assets\\images\\watch.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\watch.jpg"
     },
     {
       "Id": "C:\\Users\\Vusala\\Desktop\\1.layihe\\Backend Project\\Backend Project\\wwwroot\\assets\\js\\imagesloaded.pkgd.min.js",

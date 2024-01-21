@@ -1,0 +1,105 @@
+﻿@model IEnumerable<Product>
+@{
+    ViewData["Title"] = "Index";
+}
+
+<div>
+
+
+    <div class="table pt-3">
+
+        @if (TempData["Incorrects"] is not null)
+        {
+            <span class="text-danger">@TempData["Incorrects"]</span>
+        }
+        <table class="table table-dark">
+            <thead>
+                <tr>
+                    <th>
+                        Image
+                    </th>
+                    <th>
+                        Name
+                    </th>
+                    <th>
+                        NewPrice
+                    </th>
+                    <th>
+                        Offer
+                    </th>
+                    <th>
+                        OldPrice
+                    </th>
+                    <th>
+                        Description
+                    </th>
+                    <th>
+                        SKU
+                    </th>
+                    <th>
+                        Settings
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (Product product in Model)
+                {
+                    <tr>
+                        <td>
+                            <img src="~/assets/images/website-images/@product.Image" />
+                        </td>
+                        <td>
+                            @product.Name
+                        </td>
+                        <td>
+                            @product.NewPrice
+                        </td>
+                        <td>
+                            @product.Offer
+                        </td>
+                        <td>
+                            @product.OldPrice
+                        </td>
+                        <td>
+                            @if (product.Description.Length > 20)
+                            {
+                                @(product.Description.Substring(0, 20) + "...")
+                            }
+                            else
+                            {
+                                @(product.Description)
+                            }
+                        </td>
+                        <td>
+                            @product.SKU
+                        </td>
+                        <td>
+                            <div>
+                                <a asp-controller="products" asp-action="Create" class="btn btn-success btn-rounded btn-fw">Create</a>
+                                <a asp-controller="Products" asp-action="Detail" asp-route-id="@product.Id" class="btn btn-info btn-rounded btn-fw">Details</a>
+                                <a asp-controller="Products" asp-action="Update" asp-route-id="@product.Id" class="btn btn-warning btn-rounded btn-fw">Update</a>
+                                <a asp-controller="Products" id="deleteproducts" asp-action="Delete" asp-route-id="@product.Id" class="btn btn-danger btn-rounded btn-fw">Delete</a>
+                            </div>
+                        </td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+
+    <nav aria-label="Page navigation example">
+        <ul class="pagination justify-content-center">
+            <li class="page-item disabled">
+                <a class="page-link" href="#" tabindex="-1">Previous</a>
+            </li>
+            @for (int i = 1; i <= ViewBag.PageCount; i++)
+            {
+                <li class="page-item"><a class="page-link" asp-controller="Plants" asp-action="Index" asp-route-page="@i">@i</a></li>
+            }
+
+            <li class="page-item">
+                <a class="page-link" href="#">Next</a>
+            </li>
+        </ul>
+    </nav>
+</div>

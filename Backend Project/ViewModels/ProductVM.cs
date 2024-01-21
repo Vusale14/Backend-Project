@@ -6,5 +6,6 @@ namespace Backend_Project.ViewModels
     {
         public ICollection<Product> Products {get; set; } = null!;
         public ICollection<Category> Categories { get; set; } = null!;
+        public List<CookieItem> CookieItems { get; set; } = null!;
     }
 }

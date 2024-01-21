@@ -99,12 +99,5 @@ namespace Backend_Project.Controllers
         {
             return Json(User.Identity.IsAuthenticated);
         }
-
-        public async Task CreateRoles()
-        {
-            await _roleManager.CreateAsync(new IdentityRole() { Name = "Member" });
-            await _roleManager.CreateAsync(new IdentityRole() { Name = "Moderator" });
-            await _roleManager.CreateAsync(new IdentityRole() { Name = "Admin" });
-        }
     }
 }
